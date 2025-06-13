@@ -1,7 +1,9 @@
 const links = {
     client: {
         home: "/",
-        blogs: "/blogs"
+        blogs: "/blogs",
+        ourTeam: "/ourTeam",
+        questions: "/questions"
     }
 }
 

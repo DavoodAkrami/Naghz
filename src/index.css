@@ -1,0 +1,46 @@
+body {
+    font-family: Vazirmatn, sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+
+:root {
+    --font-size32: 32px;
+    --font-size28: 28px;
+    --font-size22: 22px;
+    --font-size18: 18px;
+    --font-size16: 16px;
+    --font-size14: 14px;
+
+    --font-weight-block: block;
+    --font-weight-bold: bold;
+    --font-weight-medium: medium;
+    --font-weight-regular: regular;
+
+    --primary-color85: #bccfd8;
+    --primary-color70: #99b0bb;
+    --primary-color60: #8099a6;
+    --primary-color45: #628494;
+    --primary-color35: #496979;
+    --primary-color20: #1a3c4d;
+    --primary-color15: #122c39;
+
+    --secondary-color65: #ffd100;
+    --secondary-color80: #ffe875;
+    --secondary-color85: #fad992;
+
+    --error-color60: #ff3131;
+    --error-color45: #cb090e;
+
+    --warning-color60: #ffb263;
+    --warning-color40: #db964f;
+
+    --success-color70: #88e162;
+    --success-color45: #72e64c;
+
+    --gray-color0: #000;
+    --gray-color10: #1d1d1b;
+    --gray-color50: #a6a6a6;
+    --gray-color100: #fff;
+}

@@ -1,0 +1,67 @@
+.root {
+    all: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    background-color: var(--primary-color15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 36px;
+    max-height: 98px;
+    user-select: none;
+}
+
+.naghzLogo {
+    margin-left: 36px;
+}
+
+.naghzLogo img{
+    max-width: 37px;
+}
+
+.sections ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 32px;
+}
+
+li {
+    list-style: none;
+    color: var(--gray-color100);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+}
+
+
+
+li:active {
+    background-color: var(--primary-color70);
+}
+
+.activeBackgroundIndicator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    background-color: var(--primary-color35);
+    border-radius: 6px;
+    transition: left 0.3s ease-in-out, width 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.liActive {
+    background-color: var(--primary-color35);
+}

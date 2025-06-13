@@ -1,0 +1,77 @@
+.root {
+    all: unset;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+/* Sizes */
+.sizeSmall {
+    padding: 8px 12px;
+    font-size: var(--font-size14);
+    font-weight: var(--font-regular);
+}
+
+.sizeMedium {
+    padding: 12px 20px;
+    font-size: var(--font-size18);
+    font-weight: var(--font-bold);
+}
+
+.sizeLarge {
+    padding: 16px 24px;
+    font-size: var(--font-size18);
+    font-weight: var(--font-bold);
+}
+
+/* varients */
+.variantOutline {
+    border: 2px solid var(--primary-color20);
+    color: var(--primary-color20);
+}
+
+.variantFill {
+    background-color: var(--primary-color20);
+    color: var(--gray-color100);
+}
+
+/* hover */
+.variantFill:hover{
+    background-color: var(--primary-color45);
+}
+
+.variantOutline:hover {
+    border: 2px solid var(--primary-color45);
+    color: var(--primary-color45);
+}
+
+/* Active */
+.variantFill:active {
+    background-color: var(--primary-color70);
+}
+
+.variantOutline:active {
+    border: 2px solid var(--primary-color70);
+    color: var(--primary-color70);
+}
+
+.variantFill.active {
+    background-color: var(--primary-color35);
+}
+
+.variantOutline.active {
+    border: 2px solid var(--primary-color35);
+    color: var(--primary-color35);
+}
+
+
+
+
+
+
+
+
+
+

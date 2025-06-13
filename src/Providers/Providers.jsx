@@ -1,10 +1,10 @@
 import { Children } from "react";
 import { BrowserRouter } from "react-router-dom";
 
-const AppProvider = ({Children}) => {
+const AppProvider = ({children}) => {
     return (
         <BrowserRouter>
-            {Children}
+            {children}
         </BrowserRouter>
     )
 }
