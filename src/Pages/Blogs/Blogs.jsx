@@ -1,10 +1,11 @@
 import styles from "./Blogs.module.css"
+import LandingCard from "../../Components/LandingCard/LandingCard";
 
 
 const Blogs = () => {
     return (
-        <div>
-            hello world
+        <div className={styles.root}>
+
         </div>
     )
 }

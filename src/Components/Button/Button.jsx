@@ -17,7 +17,7 @@ const Button = ({size = 'large', variant, children, className, onClick, active})
 
                 active === true && styles.active,
 
-                className 
+                className = {className}
             )}
         >
             {children}

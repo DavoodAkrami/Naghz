@@ -1,0 +1,151 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 600px;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color85);
+}
+
+.content {
+    padding: 30px calc(2vw + 35px);
+    color: var(--gray-color0);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.content li {
+    list-style: none;
+}
+
+.img {
+    max-height: 220px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-bottom: none;
+}
+
+.img img {
+    object-fit: cover;
+    display: block;
+    object-position: center;
+}
+
+@media (max-width: 1550px) {
+    .card {
+        width: 550px;
+    }
+    .img {
+        max-height: 190px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .card {
+        width: 500px;
+    }
+    .img {
+        max-height: 170px;
+    }
+    .content {
+        padding: 28px calc(2vw + 35px);
+    }
+}
+
+@media (max-width: 1350px) {
+    .card {
+        width: 450px;
+    }
+    .img {
+        max-height: 140px;
+    }
+    .content {
+        padding: 26px calc(2vw + 35px);
+    }
+}
+
+@media (max-width: 1250px) {
+    .card {
+        width: 420px;
+        max-height: 45vh;
+    }
+    .img {
+        max-height: 130px;
+    }
+    .content {
+        padding: 24px calc(2vw + 35px);
+    }
+}
+
+@media (max-width: 1150px) {
+    .card {
+        width: 400px;
+        max-height: 40vh;
+    }
+    .img {
+        max-height: 120px;
+    }
+    .content {
+        padding: 22px calc(2vw + 35px);
+    }
+}
+
+@media (max-width: 1050px) {
+    .card {
+        width: 360px;
+        max-height: 38vh;
+    }
+    .img {
+        max-height: 110px;
+    }
+    .content {
+        padding: 20px calc(2vw + 35px);
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .card {
+        width: 350px;
+        max-height: 35vh;
+    }
+    .img {
+        max-height: 100px;
+    }
+    .content {
+        padding: 20px calc(2vw + 35px);
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .card {
+        width: 320px;
+        max-height: 32vh;
+    }
+    .img {
+        max-height: 90px;
+    }
+    .content {
+        padding: 20px calc(2vw + 35px);
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 280px;
+        max-height: 28vh;
+    }
+    .img {
+        max-height: 80px;
+    }
+    .content {
+        padding: 16px calc(2vw + 35px);
+        font-size: 0.65rem;
+    }
+}

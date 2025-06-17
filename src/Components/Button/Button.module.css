@@ -9,20 +9,20 @@
 
 /* Sizes */
 .sizeSmall {
-    padding: 8px 12px;
-    font-size: var(--font-size14);
+    padding: clamp(6px, 1vw, 8px) clamp(8px, 1.5vw, 12px);
+    font-size: clamp(12px, 1vw, var(--font-size14));
     font-weight: var(--font-regular);
 }
 
 .sizeMedium {
-    padding: 12px 20px;
-    font-size: var(--font-size18);
+    padding: clamp(8px, 1.5vw, 12px) clamp(16px, 2vw, 20px);
+    font-size: clamp(14px, 1.2vw, var(--font-size18));
     font-weight: var(--font-bold);
 }
 
 .sizeLarge {
-    padding: 16px 24px;
-    font-size: var(--font-size18);
+    padding: clamp(12px, 2vw, 16px) clamp(20px, 2.5vw, 24px);
+    font-size: clamp(16px, 1.4vw, var(--font-size18));
     font-weight: var(--font-bold);
 }
 

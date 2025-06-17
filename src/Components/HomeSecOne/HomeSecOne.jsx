@@ -10,7 +10,7 @@ const HomeSecOne = () => {
                 <div className={styles.sectionOne}>
                     <h1>{Data.homePage.sectionOne.headerText}</h1>
                     <h1>{Data.homePage.sectionOne.underHeaderText}</h1>
-                    <Button size= 'medium' variant= 'fill' className= 'button'>
+                    <Button size= 'medium' variant= 'fill' className= 'button' >
                         {Data.homePage.sectionOne.buttonText}
                     </Button>
                 </div>

@@ -9,6 +9,7 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const currentPath = location.pathname;
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const liRefs = useRef({});
     const [indicatorStyle, setIndicatorStyle] = useState({});
@@ -24,11 +25,23 @@ const Header = () => {
         }
     }, [currentPath]);
 
+    const handleNavigate = (route) => {
+        navigate(route);
+        setIsMenuOpen(false);
+    };
+
     return (
         <div className={styles.root}>
             <div className={styles.container}>
+                
+                <div className={clsx(styles.hamburgerMenu, isMenuOpen && styles.open)} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
                 <div className={styles.sections}>
-                    <ul>
+                    <ul className={styles.desktopMenu}>
                         <div className={styles.activeBackgroundIndicator} style={indicatorStyle}></div>
 
                         {Data.sections.map((section, index) => (
@@ -46,6 +59,17 @@ const Header = () => {
                         ))}
                     </ul>
                 </div>
+
+                {isMenuOpen && (
+                    <ul className={clsx(styles.mobileMenu, styles.open)}>
+                        {Data.sections.map((section, index) => (
+                            <li key={index} className={styles.mobileLi} onClick={() => handleNavigate(section.route)}>
+                                {section.name}
+                            </li>
+                        ))}
+                    </ul>
+                )}
+
                 <div className={styles.naghzLogo}>
                     <img src="/Naghz-logo.svg" alt="لوگو نغز" />
                 </div>

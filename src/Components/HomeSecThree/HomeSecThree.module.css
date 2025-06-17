@@ -1,0 +1,22 @@
+.root {
+    all: unset;
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
