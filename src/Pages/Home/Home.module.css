@@ -1,13 +1,17 @@
 .root {
-    background-image: url(/BackGround.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
     min-height: 100dvh;
     min-height: 100vh;
     width: 100%;
     overflow-x: hidden;
     margin-top: clamp(40px, 5vw, 100px);
+    user-select: none;
+}
+
+.backGround {
+    background-image: url(/BackGround.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .sectionDivider {
@@ -20,11 +24,16 @@
 
 .HomeSecOne,
 .HomeSecTwo,
-.HomeSecThree {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+.HomeSecThree,
+.HomeSecFour,
+.HomeSecFive {
     padding: clamp(24px, 5vw, 96px);
+}
+
+@media (max-width: 1200px) {
+    .backGround {
+        background-size: cover 1200px;
+    }
 }
 
 

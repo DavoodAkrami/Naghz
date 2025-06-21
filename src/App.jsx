@@ -2,7 +2,8 @@ import links from "@/Routes/links";
 import { Outlet, Route, Routes } from "react-router-dom";
 import Header from "@/Layers/Header/Header";
 import Home from "@/Pages/Home/Home";
-import Blogs from "./Pages/Blogs/Blogs";
+import Blogs from "@/Pages/Blogs/Blogs";
+
 
 
 
@@ -23,7 +24,23 @@ const pages = [
   },
   {
     path: links.client.blogs,
-    element: <Blogs />
+    element: <Blogs />,
+  },
+  {
+    path: links.client.ourTeam,
+    element: '',
+  },
+  {
+    path: links.client.questions,
+    element: '',
+  },
+  {
+    path: links.client.contactUs,
+    element: '',
+  },
+  {
+    path: links.client.feedBack,
+    element: '',
   }
 ]
 

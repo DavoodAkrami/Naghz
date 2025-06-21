@@ -1,0 +1,17 @@
+.root {
+    all: unset;
+    height: 30vh;
+}
+
+.cardOne {
+    display: flex;
+    flex: 1;
+    border-radius: 6px;
+    overflow: hidden;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+

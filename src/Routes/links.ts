@@ -2,8 +2,10 @@ const links = {
     client: {
         home: "/",
         blogs: "/blogs",
-        ourTeam: "/ourTeam",
-        questions: "/questions"
+        ourTeam: "/ourteam",
+        questions: "/questions",
+        contactUs: "/contactus",
+        feedBack: "/feedback",
     }
 }
 
