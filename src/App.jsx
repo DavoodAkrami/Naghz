@@ -3,7 +3,7 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import Header from "@/Layers/Header/Header";
 import Home from "@/Pages/Home/Home";
 import Blogs from "@/Pages/Blogs/Blogs";
-
+import OurTeam from "@/Pages/OurTeam/OurTeam";
 
 
 
@@ -28,7 +28,7 @@ const pages = [
   },
   {
     path: links.client.ourTeam,
-    element: '',
+    element: <OurTeam />,
   },
   {
     path: links.client.questions,

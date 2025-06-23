@@ -54,10 +54,6 @@
     font-size: 0.8rem;
 }
 
-.hr {
-    width: 90%;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -87,8 +83,6 @@
 .gallery img{
     width: 80%;
     height: 80%;
-
-
 }
 
 .gallery {
@@ -118,6 +112,33 @@
 .closeLine:last-child {
     transform: rotate(-45deg);
 }
+
+.marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    direction: ltr;
+  }
+  
+  .marqueeTrack {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+  }
+  
+  .marqueeLogo {
+    height: 40px; 
+    margin-right: 40px; 
+    border-radius: 8px;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
 
 @media (max-width: 600px) {

@@ -1,0 +1,106 @@
+.root {
+    background-color: var(--primary-color35);
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.membersCard {
+    color: var(--gray-color100);
+}
+
+.membersCard {
+    margin-top: clamp(50px, 10vw, 110px);
+}
+
+.memberName {
+    display: flex;
+    justify-content: center;
+}
+
+.role {
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.bio {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    padding: 0.2rem;
+}
+
+.linkedin,
+.resume {
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 0.6rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.linkedin:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkedin:hover,
+.resume:hover {
+    border: 1px solid var(--border-color1);
+    box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
+}
+
+.linkedin img,
+.resume img,
+.linkedin svg,
+.resume svg {
+    width: 30%;  
+    height: 100%; 
+}
+
+@media (max-width: 900px) {
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 1.5rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 1rem 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}

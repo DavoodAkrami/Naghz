@@ -45,7 +45,18 @@ const Blog = () => {
                     <div className={styles.blogText}>
                         {blog.text}
                     </div>
-                    <hr className={styles.hr}/>
+                    <div className={styles.marqueeContainer}>
+                        <div className={styles.marqueeTrack}>
+                            {Array.from({ length: 60 }).map((_, i) => (
+                                <img
+                                    src="/Naghz-logo.jpg"
+                                    alt="Naghz Logo"
+                                    className={styles.marqueeLogo}
+                                    key={i}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
             ))}
             {isGalleryOpen && 

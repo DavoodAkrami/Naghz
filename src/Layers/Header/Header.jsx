@@ -4,7 +4,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import React, { useRef, useEffect, useState } from 'react';
 import clsx from 'clsx';
 
-
 const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -33,13 +32,18 @@ const Header = () => {
     return (
         <div className={styles.root}>
             <div className={styles.container}>
-                
-                <div className={clsx(styles.hamburgerMenu, isMenuOpen && styles.open)} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+
+                {/* هَمبِرگر */}
+                <div
+                    className={clsx(styles.hamburgerMenu, isMenuOpen && styles.open)}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                >
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
+                {/* منوی دسکتاپ */}
                 <div className={styles.sections}>
                     <ul className={styles.desktopMenu}>
                         <div className={styles.activeBackgroundIndicator} style={indicatorStyle}></div>
@@ -60,16 +64,20 @@ const Header = () => {
                     </ul>
                 </div>
 
-                {isMenuOpen && (
-                    <ul className={clsx(styles.mobileMenu, styles.open)}>
-                        {Data.sections.map((section, index) => (
-                            <li key={index} className={styles.mobileLi} onClick={() => handleNavigate(section.route)}>
-                                {section.name}
-                            </li>
-                        ))}
-                    </ul>
-                )}
+                {/* منوی موبایل همیشه رندر می‌شود اما با کلاس open کنترل می‌شود */}
+                <ul className={clsx(styles.mobileMenu, isMenuOpen && styles.open)}>
+                    {Data.sections.map((section, index) => (
+                        <li
+                            key={index}
+                            className={styles.mobileLi}
+                            onClick={() => handleNavigate(section.route)}
+                        >
+                            {section.name}
+                        </li>
+                    ))}
+                </ul>
 
+                {/* لوگو */}
                 <div className={styles.naghzLogo}>
                     <img src="/Naghz-logo.svg" alt="لوگو نغز" />
                 </div>

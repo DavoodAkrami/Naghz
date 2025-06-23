@@ -1,0 +1,33 @@
+.card {
+    background-color: var(--card-color);
+    width: 100%;
+    border: 1px solid var(--border-color2);
+    padding: 2%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@supports not (aspect-ratio: 3 / 4) {
+    .card {
+        position: relative;
+        height: 0;
+        padding-bottom: calc(100% * 4 / 3); 
+    }
+    .card > * {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+}
+
+.cardImg {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
