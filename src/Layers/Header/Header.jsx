@@ -33,7 +33,6 @@ const Header = () => {
         <div className={styles.root}>
             <div className={styles.container}>
 
-                {/* هَمبِرگر */}
                 <div
                     className={clsx(styles.hamburgerMenu, isMenuOpen && styles.open)}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -43,7 +42,6 @@ const Header = () => {
                     <span></span>
                 </div>
 
-                {/* منوی دسکتاپ */}
                 <div className={styles.sections}>
                     <ul className={styles.desktopMenu}>
                         <div className={styles.activeBackgroundIndicator} style={indicatorStyle}></div>
@@ -64,12 +62,15 @@ const Header = () => {
                     </ul>
                 </div>
 
-                {/* منوی موبایل همیشه رندر می‌شود اما با کلاس open کنترل می‌شود */}
+
                 <ul className={clsx(styles.mobileMenu, isMenuOpen && styles.open)}>
                     {Data.sections.map((section, index) => (
                         <li
                             key={index}
-                            className={styles.mobileLi}
+                            className={clsx(
+                                styles.mobileLi,
+                                currentPath === section.route && styles.activeLiText
+                            )}
                             onClick={() => handleNavigate(section.route)}
                         >
                             {section.name}
