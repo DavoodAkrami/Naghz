@@ -1,7 +1,6 @@
 import styles from "./OurTeam.module.css";
 import Card from "@/Components/Card/Card";
 import TeamData from "@/Data/TeamData";
-import { LinkedinLogo, ResumeLogo } from "@/Components/Icons/Icons";
 
 
 const OurTeam = () => {
@@ -19,10 +18,8 @@ const OurTeam = () => {
                         </div>
                         <div className={styles.social}>
                             <div className={styles.linkedin} onClick={() => {window.open(member.linkedin)}}>
-                                <LinkedinLogo />
                             </div>
                             <div className={styles.resume} onClick={() => {window.open(member.resume)}}>
-                                <ResumeLogo />
                             </div>
                         </div>
                     </Card>

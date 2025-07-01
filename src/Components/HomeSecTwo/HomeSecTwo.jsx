@@ -12,7 +12,7 @@ const HomeSecTwo = () => {
                         {Data.homePage.sectionTwo.headerText}
                     </h2>
                     <div className={styles.text}>
-                        <div>
+                        <div style={{ fontWeight: 800 }}>
                             {Data.homePage.sectionTwo.line1}
                         </div>
                         <div>
@@ -23,6 +23,15 @@ const HomeSecTwo = () => {
                         </div>
                         <div>
                             {Data.homePage.sectionTwo.line4}
+                        </div>
+                        <div>
+                            {Data.homePage.sectionTwo.line5}
+                        </div>
+                        <div>
+                            {Data.homePage.sectionTwo.line6}
+                        </div>
+                        <div style={{ fontWeight: 800 }}>
+                            {Data.homePage.sectionTwo.line7}
                         </div>
                     </div>
                 </div>

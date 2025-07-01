@@ -6,6 +6,8 @@ const HomeSecThree = () => {
     return (
         <div className={styles.root}>
             <div className={styles.container}>
+                <h2 className={styles.header}>{Data.homePage.sectionThree.headerText}</h2>
+                <p className={styles.answer}>{Data.homePage.sectionThree.answer}</p>
                 <section className={styles.cardContainer}>
                     <LandingCard imgSrc='Naghz-logo.jpg' imgAlt= 'naghz-logo'>
                         <h3>{Data.homePage.sectionThree.cardOne.headerText}</h3>

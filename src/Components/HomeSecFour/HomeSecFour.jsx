@@ -8,10 +8,10 @@ const HomeSecFour = () => {
         <div className={styles.root}>
             <div className={styles.container}>
                 <section className={styles.sectionFour}>
+                    <h2>{Data.homePage.sectionFour.headerText}</h2>
                     <div className={styles.cardOne}>
                         <LandingCard imgSrc='Naghz-logo.jpg' imgAlt= 'naghz-logo'>
                             <h3>{Data.homePage.sectionFour.cardOne.headerText}</h3>
-                            <p>{Data.homePage.sectionFour.cardOne.ulTitle}</p>
                             <ul>
                                 <li>{Data.homePage.sectionFour.cardOne.li1}</li>
                                 <li>{Data.homePage.sectionFour.cardOne.li2}</li>
@@ -20,14 +20,6 @@ const HomeSecFour = () => {
                         </LandingCard>
                     </div>
                     <div className={styles.cardTwo}>
-                        <LandingCard imgSrc='Naghz-logo.jpg' imgAlt= 'naghz-logo'>
-                            <ul>
-                                <li>{Data.homePage.sectionFour.cardTwo.line1}</li>
-                                <li>{Data.homePage.sectionFour.cardTwo.line2}</li>
-                                <li>{Data.homePage.sectionFour.cardTwo.line3}</li>
-                                <li>{Data.homePage.sectionFour.cardTwo.line4}</li>
-                            </ul>
-                        </LandingCard>
                         <div className={styles.content}>
                             <h3>{Data.homePage.sectionFour.line3.olHeader}</h3>
                             <ol>
