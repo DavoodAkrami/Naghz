@@ -4,7 +4,7 @@ import Home from "@/Pages/Home/Home";
 import OurTeam from "@/Pages/OurTeam/OurTeam";
 import Blogs from "@/Pages/Blogs/Blogs";
 import Layout from "@/Layers/Layout/Layout";
-
+import ContactUs from "@/Pages/ContactUs/ContactUs";
 
 
 
@@ -29,7 +29,7 @@ export const pages = [
   },
   {
     path: links.client.contactUs,
-    element: '',
+    element: <ContactUs />,
   },
   {
     path: links.client.feedBack,

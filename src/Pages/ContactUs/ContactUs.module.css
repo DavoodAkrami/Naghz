@@ -1,0 +1,96 @@
+.root {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color45, #0a84ff);
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: var(--card-color, #fff);
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(10, 132, 255, 0.07);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border: 1.5px solid var(--border-color1, #e0e0e0);
+    border-radius: 8px;
+    background: var(--background-color);
+    color: var(--gray-color100, #222);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color45, #0a84ff);
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background: var(--primary-color45, #0a84ff);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(10, 132, 255, 0.07);
+}
+
+button[type="submit"]:disabled {
+    background: var(--border-color1, #e0e0e0);
+    color: var(--gray-color60, #aaa);
+    cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+    background: var(--primary-color60, #005ecb);
+}
+
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--primary-color45, #0a84ff);
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.2rem 0.5rem;
+    }
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+
+
+
