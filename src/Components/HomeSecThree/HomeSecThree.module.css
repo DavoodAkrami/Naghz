@@ -11,7 +11,7 @@ width: 100%;
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .answer {
@@ -26,6 +26,7 @@ width: 100%;
     color: var(--gray-color100);
     transition: box-shadow 0.2s, border-color 0.2s;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .answer:hover {
@@ -59,3 +60,14 @@ width: 100%;
     }
 }
 
+@media(max-width: 850px) {
+  .header {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .header {
+    font-size: 1.6rem;
+  }
+}

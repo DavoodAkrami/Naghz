@@ -74,11 +74,11 @@
     justify-content: center;
     align-items: center;
     color: var(--gray-color100);
+    text-align: center;
 }
 
 .IOtext h2 {
-    color:var(--secondary-color65
-    ) ;
+    color:var(--secondary-color65) ;
 }
 
 :global(.highlight-primary) {
