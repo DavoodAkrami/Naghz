@@ -1,106 +1,108 @@
 .root {
+    margin-top: clamp(40px, 5vw, 100px);
     background-color: var(--primary-color35);
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-bottom: 0;
 }
 
 .container {
     width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2.5rem;
-    justify-content: center;
-    padding: 2rem;
     margin: 0 auto;
+    padding: 3rem 0 0 0;
 }
 
-.membersCard {
+.CardContainer {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+    padding: 3rem 0 0 0;
     color: var(--gray-color100);
 }
 
-.membersCard {
-    margin-top: clamp(50px, 10vw, 110px);
-}
-
 .memberName {
-    display: flex;
-    justify-content: center;
+    line-height: 0.1rem;
 }
 
 .role {
-    display: flex;
-    justify-content: center;
     font-size: 1.4rem;
-    font-weight: 500;
-}
-
-.bio {
-    width: 90%;
-    margin: 2rem auto;
-    display: flex;
-    justify-content: center;
 }
 
 .social {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 6%;
-    padding: 0.2rem;
+    gap: 1.2rem;
+    margin-top: 1.5rem;   
 }
 
-.linkedin,
-.resume {
-    width: 40%;
-    background-color: rgba(0, 0, 0, 0.5);
+.resume,
+.linkedin {
+    width: 45%;
+    min-width: 80px;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--border-color1, #0A84FF);
+    background: var(--gray-color100, #fff);
     border-radius: 10px;
-    padding: 0.6rem;
+    padding: 0.6rem 0;
     cursor: pointer;
-    border: 1px solid transparent;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 0 2px 8px rgba(10, 132, 255, 0.07);
+    color: var(--border-color1, #0A84FF);
 }
 
-.linkedin:first-child {
+.resume:hover,
+.linkedin:hover {
+    background: var(--primary-color45);
+    color: var(--gray-color100, #fff);
+    border-color: var(--primary-color45);
+    box-shadow: 0 4px 16px rgba(10, 132, 255, 0.13);
+}
+
+.IOtext {
+    padding: 1.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--gray-color100);
 }
 
-.resume:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.IOtext h2 {
+    color:var(--secondary-color65
+    ) ;
 }
 
-.linkedin:hover,
-.resume:hover {
-    border: 1px solid var(--border-color1);
-    box-shadow: 0 0 0 3px rgba(10, 132, 255, 0.3);
+:global(.highlight-primary) {
+    color: var(--primary-color45);
+    font-weight: bold;
+}
+:global(.highlight-accent) {
+    color: var(--secondary-color65);
+    font-weight: bold;
+}
+:global(.highlight-secondary) {
+    color: var(--primary-color45);
+    font-weight: bold;
 }
 
-.linkedin img,
-.resume img,
-.linkedin svg,
-.resume svg {
-    width: 30%;  
-    height: 100%; 
-}
-
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-        gap: 1.5rem 1rem;
+@media(max-width: 1200px) {
+    .CardContainer {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr;
-        gap: 1rem 0;
-        padding: 10px;
+@media(max-width: 700px) {
+    .CardContainer {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
-@media (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        padding: 1rem;
-    }
-}

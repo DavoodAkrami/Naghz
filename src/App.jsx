@@ -1,23 +1,16 @@
 import links from "@/Routes/links";
 import { Outlet, Route, Routes } from "react-router-dom";
-import Header from "@/Layers/Header/Header";
 import Home from "@/Pages/Home/Home";
-import Blogs from "@/Pages/Blogs/Blogs";
 import OurTeam from "@/Pages/OurTeam/OurTeam";
+import Blogs from "@/Pages/Blogs/Blogs";
+import Layout from "@/Layers/Layout/Layout";
 
 
 
-const Layout = ({children}) => {
-  return (
-    <>
-      <Header />  
-        {children}
-    </>
-  )
-}
 
 
-const pages = [
+
+export const pages = [
   {
     path: links.client.home,
     element: <Home />,
