@@ -78,6 +78,38 @@
     background-color: var(--primary-color35);
 }
 
+.backHeaderBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--primary-color15);
+    display: flex;
+    align-items: center;
+    height: clamp(50px, 7vw, 70px);
+    padding: 0 clamp(18px, 3vw, 36px);
+    box-shadow: 0 2px 8px rgba(10, 132, 255, 0.07);
+    justify-content: flex-end;
+}
+
+.backArrow {
+    color: var(--gray-color100);
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 8px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.backArrow:hover {
+    background: var(--primary-color35);
+}
+
+
 @media (max-width: 1200px) {
     .li {
         font-size: 0.9rem;
@@ -203,37 +235,10 @@
     .mobileLi:active {
         background-color: var(--primary-color70);
     }
+    .backArrow {
+        font-size: 1.4rem;
+    }
 }
 
-.backHeaderBar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: var(--primary-color15);
-    display: flex;
-    align-items: center;
-    height: clamp(50px, 7vw, 70px);
-    padding: 0 clamp(18px, 3vw, 36px);
-    box-shadow: 0 2px 8px rgba(10, 132, 255, 0.07);
-    justify-content: flex-end;
-}
-
-.backArrow {
-    color: var(--gray-color100);
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 8px;
-    transition: background 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.backArrow:hover {
-    background: var(--primary-color35);
-}
 
 

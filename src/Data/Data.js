@@ -16,10 +16,17 @@ const Data = {
             route: links.client.ourTeam
         },
         {
-            name: "سوالات متداول",
-            route: links.client.questions
+            name: "ارتباط با ما",
+            route: links.client.contactUs
         }
     ],
+
+    SocialLogo: {
+        email: "thenaghz.io@gmail.com",
+        instagramLink: "https://www.instagram.com/naghz.io?igsh=MXV3cjh5Z3J5Z2Rtcw==",
+        linkedinLink: "https://www.linkedin.com/company/naghz/",
+        telegramChannelLink: "https://t.me/naghz_io",
+    },
     
     homePage: {
         sectionOne: {

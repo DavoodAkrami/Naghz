@@ -35,7 +35,7 @@ const Header = () => {
     };
 
 
-    const headerPages = [ "/", "/blogs", "/ourteam" ];
+    const headerPages = [ "/", "/blogs", "/ourteam", "/contactus" ];
 
     if (headerPages.includes(currentPath)) {
         return (

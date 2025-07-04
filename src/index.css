@@ -35,6 +35,11 @@ body {
     --secondary-color80: #ffe875;
     --secondary-color85: #fad992;
 
+    --gray-color0: #000;
+    --gray-color10: #1d1d1b;
+    --gray-color50: #a6a6a6;
+    --gray-color100: #fff;
+
     --error-color60: #ff3131;
     --error-color45: #cb090e;
 
@@ -44,12 +49,8 @@ body {
     --success-color70: #88e162;
     --success-color45: #72e64c;
 
-    --gray-color0: #000;
-    --gray-color10: #1d1d1b;
-    --gray-color50: #a6a6a6;
-    --gray-color100: #fff;
 
-    --border-color1: #0A84FF;
+    --border-color1: #0a84ff;
     --border-color2: rgba(255, 255, 255, 0.1);
     --card-color: rgba(28, 28, 30, 0.7);
 }
